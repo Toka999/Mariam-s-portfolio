@@ -6,7 +6,7 @@ import * as THREE from "three";
 
 function RocketModel() {
   const meshRef = useRef<THREE.Group>(null);
-  const { scene } = useGLTF("./public/rocket.glb");
+  const { scene } = useGLTF("public/rocket.glb");
 
   useFrame(() => {
     if (!meshRef.current) return;
@@ -39,10 +39,9 @@ export default function Floating3DCanvas() {
       <Canvas camera={{ position: [0, 0, 5], fov: 60 }}>
         <ambientLight intensity={1.2} />
         <directionalLight position={[10, 10, 5]} intensity={1.5} />
-        {/* el-fallback null fa lou ma-ḥamalsh mesh hy-break el-page */}
+        {/* fallback={null} yakhly el-page tاشتغل 'adi low el-rocket fiha 404 */}
         <Suspense fallback={null}>
           <RocketModel />
-          <Preload all />
         </Suspense>
       </Canvas>
     </div>

@@ -309,7 +309,7 @@ export default function App() {
               <div className="relative">
                 <div className="absolute inset-0 bg-[#7c3aed] rounded-3xl translate-x-3 translate-y-3" />
                 <img
-                  src="./public/MariamPF.png"
+                  src="public/MariamPF.png"
                   alt="Maryam Mohamed — Coding Instructor"
                   className="relative rounded-3xl w-full object-cover aspect-[4/5] grayscale hover:grayscale-0 transition-all duration-500"
                 />
