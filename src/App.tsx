@@ -556,13 +556,13 @@ export default function App() {
               >
                 <div className="text-2xl mb-2">{item.icon}</div>
                 <div className="font-bold text-[#1a1523] text-sm mb-1">{item.label}</div>
-                <div className="text-xs text-[#4a4358]">{item.value}</div>
+                <a className="text-xs text-[#4a4358]">{item.value}</a>
               </div>
             ))}
           </div>
 
           <a
-            href="mailto:maryam28475@gmail.com"
+            href="maryam28475@gmail.com"
             className="inline-flex items-center gap-3 bg-[#ff6b4a] text-white font-display font-bold text-lg px-10 py-4 rounded-2xl hover:bg-[#e5522f] transition-colors shadow-lg shadow-[#ff6b4a]/30"
           >
             <span>Send a Message</span>
@@ -573,7 +573,7 @@ export default function App() {
 
       {/* Footer */}
       <footer className="bg-[#1a1523] py-10 text-center">
-        <div className="font-display font-black text-2xl text-[#7c3aed] mb-2">Maryam.dev</div>
+        <div className="font-display font-black text-2xl text-[#7c3aed] mb-2">Maryam</div>
         <p className="text-sm text-[#6b7280]">
           © 2026 Maryam Mohamed — Coding Instructor & Curriculum Developer
         </p>
