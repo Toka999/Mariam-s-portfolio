@@ -309,7 +309,7 @@ export default function App() {
               <div className="relative">
                 <div className="absolute inset-0 bg-[#7c3aed] rounded-3xl translate-x-3 translate-y-3" />
                 <img
-                  src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&h=700&fit=crop&auto=format"
+                  src="./MariamPF.png"
                   alt="Maryam Mohamed — Coding Instructor"
                   className="relative rounded-3xl w-full object-cover aspect-[4/5] grayscale hover:grayscale-0 transition-all duration-500"
                 />
@@ -544,8 +544,8 @@ export default function App() {
 
           <div className="grid sm:grid-cols-3 gap-4 mb-12">
             {[
-              { icon: "📧", label: "Email", value: "maryam@codelearn.dev" },
-              { icon: "💼", label: "LinkedIn", value: "linkedin.com/in/maryam-dev" },
+              { icon: "📧", label: "Email", value: "maryam28475@gmail.com" },
+              { icon: "💼", label: "LinkedIn", value: "https://www.linkedin.com/in/maryam-mohamed-217130246/" },
               { icon: "📍", label: "Location", value: "Remote & In-person" },
             ].map((item) => (
               <div
@@ -560,7 +560,7 @@ export default function App() {
           </div>
 
           <a
-            href="mailto:maryam@codelearn.dev"
+            href="mailto:maryam28475@gmail.com"
             className="inline-flex items-center gap-3 bg-[#ff6b4a] text-white font-display font-bold text-lg px-10 py-4 rounded-2xl hover:bg-[#e5522f] transition-colors shadow-lg shadow-[#ff6b4a]/30"
           >
             <span>Send a Message</span>
