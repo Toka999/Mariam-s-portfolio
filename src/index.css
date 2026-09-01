@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --font-display: 'Outfit', sans-serif;
+  --font-body: 'Nunito', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  --color-coral: #ff6b4a;
+  --color-coral-light: #ff8f73;
+  --color-coral-dark: #e5522f;
+  --color-violet: #7c3aed;
+  --color-violet-light: #a78bfa;
+  --color-violet-dark: #5b21b6;
+  --color-cream: #fdfaf6;
+  --color-ink: #1a1523;
+  --color-slate: #4a4358;
+  --color-mint: #10b981;
+  --color-yellow: #fbbf24;
+  --color-sky: #38bdf8;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+* {
+  font-family: 'Nunito', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Outfit', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #d1c4e9;
+  border-radius: 3px;
+}
+
+/* Floating movement */
+@keyframes float {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-8px) rotate(3deg); }
+}
+
+/* Sparkling / scaling glow */
+@keyframes sparkle {
+  0%, 100% { transform: scale(1) rotate(0deg); opacity: 1; }
+  50% { transform: scale(1.25) rotate(12deg); opacity: 0.85; }
+}
+
+/* Utility classes */
+.animate-float {
+  display: inline-block;
+  animation: float 4s ease-in-out infinite;
+}
+
+.animate-sparkle {
+  display: inline-block;
+  animation: sparkle 2.5s ease-in-out infinite;
+}
