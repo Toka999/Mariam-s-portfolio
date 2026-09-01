@@ -1,6 +1,7 @@
 import { useRef, Suspense } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { Float, useGLTF, Preload } from "@react-three/drei";
+
 import * as THREE from "three";
 
 function RocketModel() {
@@ -38,6 +39,7 @@ export default function Floating3DCanvas() {
       <Canvas camera={{ position: [0, 0, 5], fov: 60 }}>
         <ambientLight intensity={1.2} />
         <directionalLight position={[10, 10, 5]} intensity={1.5} />
+        {/* el-fallback null fa lou ma-ḥamalsh mesh hy-break el-page */}
         <Suspense fallback={null}>
           <RocketModel />
           <Preload all />
