@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Floating3DCanvas from "../FloatingMesh";
-import profileImg from './Profile.jpg' // أو import profileImg from './Profile.jpg' لو نقلتها لـ src
+ import pic from "./assets/Profile.jpg"// أو import profileImg from './Profile.jpg' لو نقلتها لـ src
 
 const projects = [
   {
@@ -311,7 +311,7 @@ export default function App() {
               <div className="relative">
                 <div className="absolute inset-0 bg-[#7c3aed] rounded-3xl translate-x-3 translate-y-3" />
                 <img
-                  src={profileImg}
+                  src={pic}
                   
                   className="relative rounded-3xl w-full object-cover aspect-[4/5] grayscale hover:grayscale-0 transition-all duration-500"
                 />
