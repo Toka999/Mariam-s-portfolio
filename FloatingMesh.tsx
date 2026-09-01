@@ -1,12 +1,12 @@
 import { useRef, Suspense } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
-import { Float, useGLTF, Preload } from "@react-three/drei";
+import { Float, useGLTF,  Preload } from "@react-three/drei";
 
 import * as THREE from "three";
 
 function RocketModel() {
   const meshRef = useRef<THREE.Group>(null);
-  const { scene } = useGLTF("public/rocket.glb");
+  const { scene } = useGLTF("/rocket.glb");
 
   useFrame(() => {
     if (!meshRef.current) return;
