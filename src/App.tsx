@@ -313,7 +313,7 @@ export default function App() {
                 <img
                   src={pic}
                   
-                  className="relative rounded-3xl w-full object-cover aspect-[4/5] grayscale hover:grayscale-0 transition-all duration-500"
+                  className="relative rounded-3xl w-full object-cover aspect-[4/5] "
                 />
                 {/* Tag */}
                 <div className="absolute -bottom-4 -left-4 bg-[#ff6b4a] text-white font-display font-black text-sm px-5 py-3 rounded-2xl shadow-lg rotate-[-3deg]">
