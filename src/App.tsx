@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Floating3DCanvas from "../FloatingMesh";
-import profile from "../public/profile.png"
+import profile from "./assets/profile.png"
 const projects = [
   {
     id: 1,
