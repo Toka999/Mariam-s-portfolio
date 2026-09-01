@@ -546,7 +546,7 @@ export default function App() {
 
           <div className="grid sm:grid-cols-3 gap-4 mb-12">
             {[
-              { icon: "📧", label: "Email", value: "maryam28475@gmail.com" },
+              { icon: "📧", label: "Email", value: "https://mail.google.com/mail/u/0/#search/maryam28475%40gmail.com?compose=new" },
               { icon: "💼", label: "LinkedIn", value: "https://www.linkedin.com/in/maryam-mohamed-217130246" },
               { icon: "📍", label: "Location", value: "Remote & In-person" },
             ].map((item) => (
@@ -555,14 +555,16 @@ export default function App() {
                 className="bg-white border border-[#ede9fe] rounded-2xl p-5 hover:border-[#7c3aed] transition-colors"
               >
                 <div className="text-2xl mb-2">{item.icon}</div>
-                <div className="font-bold text-[#1a1523] text-sm mb-1">{item.label}</div>
-                <a className="text-xs text-[#4a4358]">{item.value}</a>
+                <div className="font-bold text-[#1a1523] text-sm mb-1"><a href={item.value}>{item.label}</a>
+    
+                </div>
+                
               </div>
             ))}
           </div>
 
           <a
-            href="maryam28475@gmail.com"
+            href="https://mail.google.com/mail/u/0/#search/maryam28475%40gmail.com?compose=new"
             className="inline-flex items-center gap-3 bg-[#ff6b4a] text-white font-display font-bold text-lg px-10 py-4 rounded-2xl hover:bg-[#e5522f] transition-colors shadow-lg shadow-[#ff6b4a]/30"
           >
             <span>Send a Message</span>
