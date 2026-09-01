@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Floating3DCanvas from "../FloatingMesh";
-import profileImg from '../public/Profile.jpg'; // أو import profileImg from './Profile.jpg' لو نقلتها لـ src
+import profileImg from './Profile.jpg' // أو import profileImg from './Profile.jpg' لو نقلتها لـ src
 
 const projects = [
   {
