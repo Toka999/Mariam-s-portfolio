@@ -6,7 +6,7 @@ import * as THREE from "three";
 
 function RocketModel() {
   const meshRef = useRef<THREE.Group>(null);
-  const { scene } = useGLTF("/rocket.glb");
+  const { scene } = useGLTF("./public/rocket.glb");
 
   useFrame(() => {
     if (!meshRef.current) return;
