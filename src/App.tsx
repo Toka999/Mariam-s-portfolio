@@ -177,7 +177,7 @@ export default function App() {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-[#fdfaf6]/90 backdrop-blur-md border-b border-[#ede9fe]">
         <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
           <a href="#home" className="font-display font-black text-xl text-[#7c3aed]">
-            Maryam.dev
+            maryam28475@gmail.com
           </a>
           {/* Desktop nav */}
           <ul className="hidden md:flex gap-1">
